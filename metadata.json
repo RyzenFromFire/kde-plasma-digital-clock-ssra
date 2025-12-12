@@ -64,7 +64,7 @@
             "desktop"
         ],
         "Icon": "preferences-system-time",
-        "Id": "org.kde.plasma.digitalclock.samesize",
+        "Id": "com.github.alex47.samesizedigitalclock",
         "License": "GPL-2.0+",
         "Name": "Digital Clock - Same size",
         "Website": "https://kde.org/plasma-desktop"
