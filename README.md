@@ -1,6 +1,6 @@
-# PlasmaDigitalClockSameSize
-Based on the original [KDE DigitalClock applet](https://invent.kde.org/plasma/plasma-workspace/-/tree/master/applets/digital-clock), with the following differences:
- - Time and date is the same size
- - Default font size is smaller
+# KDE Plasma Digital Clock (Same Size, Right Aligned)
+## `kde-plasma-digital-clock-ssra`
 
-<img width="396" height="164" alt="image" src="https://github.com/user-attachments/assets/f56771b1-2d77-4c7f-8407-c9ce01f58543" />
+Fork of [KDE Plasma Digital Clock](https://invent.kde.org/plasma/plasma-workspace/-/tree/master/applets/digital-clock). Modified based on [alex47's "Same Size Digital Clock"](https://github.com/alex47/PlasmaDigitalClockSameSize) and [this Reddit post](https://www.reddit.com/r/cachyos/comments/1lj776m/orgkdeplasmadigitalclock_but_right_aligned/)
+
+The same as the stock digital clock, except the time and date fonts are the same size, and everything is right-aligned. Overall, similar to the Windows 10/11 digital clock. 
