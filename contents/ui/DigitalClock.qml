@@ -1,10 +1,10 @@
 /*
-    SPDX-FileCopyrightText: 2013 Heena Mahour <heena393@gmail.com>
-    SPDX-FileCopyrightText: 2013 Sebastian Kügler <sebas@kde.org>
-    SPDX-FileCopyrightText: 2013 Martin Klapetek <mklapetek@kde.org>
-    SPDX-FileCopyrightText: 2014 David Edmundson <davidedmundson@kde.org>
-
-    SPDX-License-Identifier: GPL-2.0-or-later
+ *   SPDX-FileCopyrightText: 2013 Heena Mahour <heena393@gmail.com>
+ *   SPDX-FileCopyrightText: 2013 Sebastian Kügler <sebas@kde.org>
+ *   SPDX-FileCopyrightText: 2013 Martin Klapetek <mklapetek@kde.org>
+ *   SPDX-FileCopyrightText: 2014 David Edmundson <davidedmundson@kde.org>
+ *
+ *   SPDX-License-Identifier: GPL-2.0-or-later
  */
 
 pragma ComponentBehavior: Bound
@@ -176,7 +176,8 @@ MouseArea {
             AnchorChanges {
                 target: labelsGrid
 
-                anchors.horizontalCenter: contentItem.horizontalCenter
+                // anchors.horizontalCenter: contentItem.horizontalCenter
+                anchors.right: contentItem.right
             }
 
             PropertyChanges {
@@ -211,7 +212,14 @@ MouseArea {
                 target: dateLabel
 
                 anchors.top: labelsGrid.bottom
-                anchors.horizontalCenter: labelsGrid.horizontalCenter
+                // anchors.horizontalCenter: labelsGrid.horizontalCenter
+                anchors.right: labelsGrid.right
+            }
+
+            AnchorChanges {
+                target: timeLabel
+
+                anchors.right: dateLabel.right
             }
 
             PropertyChanges {
@@ -527,7 +535,8 @@ MouseArea {
             id: labelsGrid
 
             rows: 1
-            horizontalItemAlignment: Grid.AlignHCenter
+            // horizontalItemAlignment: Grid.AlignHCenter
+            horizontalItemAlignment: Grid.AlignRight
             verticalItemAlignment: Grid.AlignVCenter
 
             flow: Grid.TopToBottom
@@ -551,7 +560,8 @@ MouseArea {
                 textFormat: Text.PlainText
 
                 verticalAlignment: Text.AlignVCenter
-                horizontalAlignment: Text.AlignHCenter
+                // horizontalAlignment: Text.AlignHCenter
+                horizontalAlignment: Text.AlignRight
             }
 
             PlasmaComponents.Label {
@@ -563,7 +573,8 @@ MouseArea {
                 minimumPixelSize: 1
 
                 visible: text.length > 0
-                horizontalAlignment: Text.AlignHCenter
+                // horizontalAlignment: Text.AlignHCenter
+                horizontalAlignment: Text.AlignRight
                 verticalAlignment: Text.AlignVCenter
                 textFormat: Text.PlainText
             }
@@ -599,7 +610,8 @@ MouseArea {
             font.pixelSize: 1024
             minimumPixelSize: 1
 
-            horizontalAlignment: Text.AlignHCenter
+            // horizontalAlignment: Text.AlignHCenter
+            horizontalAlignment: Text.AlignRight
             verticalAlignment: Text.AlignVCenter
             textFormat: Text.PlainText
         }
